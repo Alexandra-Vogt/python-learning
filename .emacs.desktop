@@ -1,0 +1,31 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sat Nov 16 12:35:51 2019
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24016 23975 512660 490000) (desktop . "208") "vogt@TIAMAT-I" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-CTDB-Fira Code-normal-normal-normal-*-9-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#839496") (background-color . "#002b36") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#839496") (environment) (frameset--id . "3DA7-22F5-3373-2338") (frameset--mini t . t) (frameset--text-pixel-width . 1008) (frameset--text-pixel-height . 752) (height . 62) (width . 201) (modeline . t) (unsplittable) (left . 0) (top . 16) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 48) (min-pixel-width . 50) (min-pixel-height-ignore . 48) (min-pixel-width-ignore . 30) (min-pixel-height-safe . 12) (min-pixel-width-safe . 10)) leaf (pixel-width . 1024) (pixel-height . 740) (total-width . 205) (total-height . 62) (normal-height . 1.0) (normal-width . 1.0) (buffer "primefinder.py" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 328) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist '((105)))
+(setq file-name-history '("/home/vogt/devl/python-learning/"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/vogt/devl/python-learning/primefinder.py"
+  "primefinder.py"
+  'python-mode
+  '(eldoc-mode flyspell-mode undo-tree-mode dimmer-mode flycheck-mode lsp-mode override-global-mode auto-revert-mode magit-file-mode ivy-mode company-mode highlight-indent-guides-mode rainbow-delimiters-mode)
+  328
+  '(381 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24016 23972 27946 25000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
