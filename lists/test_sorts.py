@@ -6,6 +6,7 @@ import random
 # My file imports
 from mergesort import mergesort
 from quicksort import quicksort
+from radixsort import radixsort
 
 
 def isSorted(numList):
@@ -38,3 +39,4 @@ def testSort(sort):
 
 testSort(mergesort)
 testSort(quicksort)
+testSort(radixsort)
