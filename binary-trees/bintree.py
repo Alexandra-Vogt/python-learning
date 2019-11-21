@@ -53,3 +53,42 @@ class Bintree:
                     exists = True
                     found = True
         return exists
+
+    # left root right
+    def inorder(self):
+        def traverse(node):
+            node_list = []
+            if node.lsr:
+                node_list += traverse(node.lsr)
+            node_list.append(node.val)
+            if node.gtr:
+                node_list += traverse(node.gtr)
+            return node_list
+
+        return traverse(self.head)
+
+    # root left right
+    def postorder(self):
+        def traverse(node):
+            node_list = []
+            node_list.append(node.val)
+            if node.lsr:
+                node_list += traverse(node.lsr)
+            if node.gtr:
+                node_list += traverse(node.gtr)
+            return node_list
+
+        return traverse(self.head)
+
+    # left right root
+    def preorder(self):
+        def traverse(node):
+            node_list = []
+            if node.lsr:
+                node_list += traverse(node.lsr)
+            if node.gtr:
+                node_list += traverse(node.gtr)
+            node_list.append(node.val)
+            return node_list
+
+        return traverse(self.head)
