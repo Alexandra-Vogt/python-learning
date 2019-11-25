@@ -2,7 +2,6 @@ class AvlBintreeNode:
     def __init__(self, val):
         self.gtr = None
         self.lsr = None
-        self.depth = 0
         self.val = val
 
 
@@ -13,13 +12,21 @@ class Bintree:
     def rotate(self):
         noop
 
-    def calculate_weights(self):
-        noop
+    def rebalance(self, prev_node, side):
+        def get_weights(node):
+            node.lsr = 1
+
+        if side == "lsr":
+            "left rotation"
+        else:
+            "right rotation"
 
     def add_node(self, val):
         if not self.head:
             self.head = BintreeNode(val)
         else:
+            past_node0 = None
+            past_node1 = None
             current_node = self.head
             inserted = False
             while not inserted:
@@ -60,3 +67,39 @@ class Bintree:
                     exists = True
                     found = True
         return exists
+
+    def inorder(self):
+        def traverse(node):
+            node_list = []
+            if node.lsr:
+                node_list += traverse(node.lsr)
+            node_list.append(node.val)
+            if node.gtr:
+                node_list += traverse(node.gtr)
+            return node_list
+
+        return traverse(self.head)
+
+    def postorder(self):
+        def traverse(node):
+            node_list = []
+            node_list.append(node.val)
+            if node.lsr:
+                node_list += traverse(node.lsr)
+            if node.gtr:
+                node_list += traverse(node.gtr)
+            return node_list
+
+        return traverse(self.head)
+
+    def preorder(self):
+        def traverse(node):
+            node_list = []
+            if node.lsr:
+                node_list += traverse(node.lsr)
+            if node.gtr:
+                node_list += traverse(node.gtr)
+            node_list.append(node.val)
+            return node_list
+
+        return traverse(self.head)

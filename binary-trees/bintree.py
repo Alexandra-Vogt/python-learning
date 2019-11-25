@@ -54,7 +54,6 @@ class Bintree:
                     found = True
         return exists
 
-    # left root right
     def inorder(self):
         def traverse(node):
             node_list = []
@@ -67,7 +66,6 @@ class Bintree:
 
         return traverse(self.head)
 
-    # root left right
     def postorder(self):
         def traverse(node):
             node_list = []
@@ -80,7 +78,6 @@ class Bintree:
 
         return traverse(self.head)
 
-    # left right root
     def preorder(self):
         def traverse(node):
             node_list = []

@@ -28,6 +28,7 @@ def testSort(sort):
 
     # Test list sorting
     testlist100 = [random.randrange(-1024, 1024) for i in range(100)]
+    print(sort(testlist100))
     assert isSorted(sort(testlist100))
 
     testlist1000 = [random.randrange(-1024, 1024) for i in range(100)]
