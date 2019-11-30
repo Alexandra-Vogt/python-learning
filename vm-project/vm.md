@@ -20,6 +20,9 @@ execution of the code.
 #### 0x04 ARD - Arithmetic Register D
 
 
+get order of magnitude
+
+
 ### System Registers:
 System registers are registers that serve to execute the program. They can also
 be the target of computational operations.

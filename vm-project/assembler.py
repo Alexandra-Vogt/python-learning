@@ -2,7 +2,7 @@
 
 #!/usr/bin/env python3
 
-from instructions_file import INSTRUCTION_TABLE
+from instructions import INSTRUCTION_TABLE
 
 DIRECT_TRANSLATION_TABLE = {}
 
@@ -28,6 +28,7 @@ DIRECT_TRANSLATION_TABLE = {
 }
 
 DATA_TRANSLATION_TABLE = {}
+
 
 
 def tokenize(data):
