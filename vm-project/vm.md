@@ -113,9 +113,11 @@ Special instructions can occur between registers and memory.
 Compare the contents of register a to the contents of register b
 #### 0x11 LOAD a b - Load
 Load from address b into register a
-#### 0x12 PSH a - Push 
+#### 0x12 PULL a b - Pull
+Load from register b into address a
+#### 0x13 PSH a - Push 
 Push register or memory location to stack and increase SHP by 8
-#### 0x13 POP a - Pop
+#### 0x14 POP a - Pop
 Pop top value on stack, place it in register, and reduce SHP by 8
 
 ## Memory:

@@ -38,6 +38,7 @@ INSTRUCTION_TABLE = [
     Instruction("OR", 0x0F, logic.or_fun),
     Instruction("COMP", 0x10, special.comp_fun),
     Instruction("LOAD", 0x11, special.load_fun),
-    Instruction("PUSH", 0x12, special.push_fun),
-    Instruction("POP", 0x13, special.pop_fun),
+    Instruction("PULL", 0x12, special.pull_fun),
+    Instruction("PUSH", 0x13, special.psh_fun),
+    Instruction("POP", 0x14, special.pop_fun),
 ]
